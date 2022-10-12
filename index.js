@@ -1,4 +1,10 @@
 $(function () {
+    document.addEventListener('click', (e) => {
+        if(e.target.matches('.bars_menu') || e.target.matches('.bars_menu *')) {
+            document.querySelector('.menu').classList.toggle('header_none')
+        }
+    })
+
     $('.btn_indicator').mouseover(function() {
         $('.img_principal').each(function () {
             $(this).removeClass('hov')
@@ -31,7 +37,6 @@ $(function () {
         nav: true,
         dots: true,
         loop: true,
-        // items: 3,
         responsive:{
             0:{
                 items:1,
@@ -39,7 +44,7 @@ $(function () {
                 dots: true,
                 loop:true,
             },
-            600:{
+            801:{
                 items:2,
                 nav:true,
                 dots: true,
@@ -51,6 +56,30 @@ $(function () {
                 dots: true,
                 loop:true,
             },
+        }
+    })
+
+    // $('.list_forms').click(function() {
+    //     if(!$(this).hasClass('active_list')) {
+    //         $('.list_forms').each(function () {
+    //             $(this).removeClass('active_list')
+    //         })
+
+    //         $('.cl_form').each(function () {
+    //             $(this).addClass('none')
+    //         })
+
+    //         $(this).addClass('active_list')
+    //         console.log($(this)[0])
+    //         $(`#${$(this).data('form')}`).removeClass('none')
+    //     }
+    // })
+
+    $('#capture').on('change', function () {
+        if(document.getElementById('capture').files[0]) {
+            $('.name_img').html(document.getElementById('capture').files[0].name)
+        } else {
+            $('.name_img').html('')
         }
     })
 })

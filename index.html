@@ -7,21 +7,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css">
     <link rel="stylesheet" href="index.css">
     <title>supple</title>
 </head>
 <body>
+    <a href="#" class="chat">
+        <img src="images/Grupo 44.png" alt="chat">
+    </a>
+
     <header class="header">
-        <img src="images/Grupo 2.png" alt="logo" class="logo">
+        <a href="index.html" class="home"><img src="images/Grupo 2.png" alt="logo" class="logo"></a>
         <nav>
-            <ul class="menu">
-                <li>Inicio</li>
-                <li>Servicios</li>
-                <li>Quienes somos</li>
-                <li>Testimonios</li>
-                <li>Eres cliente</li>
-                <li>Eres proveedor</li>
+            <ul class="menu header_none">
+                <li><a href="#" class="menu_active">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Testimonios</a></li>
+                <li><a href="clients.html">Eres cliente</a></li>
+                <li><a href="providers.html">Eres proveedor</a></li>
             </ul>
+            <div class="ctn_bars">
+                <i class="fa-solid fa-bars bars_menu"></i>
+            </div>
         </nav>
     </header>
 
@@ -30,16 +38,19 @@
             <img src="images/Grupo 662.png" alt="personas" class="img_banner">
             <img src="images/Grupo 7.png" alt="" class="lineas">
             <div class="banner_text">
-                <p class="banner_text_orange"><span class="separate">LO QUE NECESITAS</span><span class="separate pos_orange">PARA TU EMPRESA</span></p>
-                <P class="banner_text_gray pos_space"><span class="separate">Insumos de papelería, aseo, cafeteria y</span><span class="separate">alquiler de vehiculos.</span></P>
-                <div class="ctn_supple_btn pos_space">
-                    <a href="#" class="supple_btn btn_banner">SOLICITA TU COTIZACIÓN</a>
+                <div class="ctn_banner_text">
+                    <p class="banner_text_orange anim_right"><span class="separate">LO QUE NECESITAS</span><span class="separate pos_orange">PARA TU EMPRESA</span></p>
+                    <P class="banner_text_gray pos_space anim_right2"><span class="separate">Insumos de papelería, <span>aseo, cafeteria y </span><span class="separate separate_desk">alquiler de vehiculos.</span></span></P>
+                    <div class="ctn_supple_btn pos_space">
+                        <a href="clients.html" class="supple_btn btn_banner">SOLICITA TU COTIZACIÓN</a>
+                    </div>
                 </div>
             </div>
         </section>
         
         <section class="services">
             <img src="images/Enmascarar grupo 6.png" alt="" class="services_bag">
+            <img src="images/Enmascarar grupo 15.png" alt="" class="mobile">
             <div class="ctn_tittle">
                 <img src="images/Grupo 7.png" alt="" class="services_lineas">
                 <h2 class="tittle">SERVICIOS</h2>
@@ -47,43 +58,43 @@
             <div class="carousel slider carousel-fade" id="carouselExampleCaptions" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="row carousel-item active">
-                        <div class="col-md-6 carousel_text">
+                        <div class="col-md-6 col-10 carousel_text">
                             <h4 class="slider_tittle">INSUMOS ASEO</h4>
                             <p class="slider_text">Ofrecemos productos de aseo en general, para aprovisionar las necesidades de su empresa. Nuestro portafolio de servicios hace que seamos su mejor aliado comercial con diferentes opciones de servicio y calidad.</p>
                         
-                            <div class="ctn_btn_services">
-                                <a href="#" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
+                            <div class="ctn_btn_services btn_carousel">
+                                <a href="clients.html" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
                             </div>
                         </div>
-                        <div class="col-md-5 ctn_slider_img">
+                        <div class="col-5 ctn_slider_img">
                             <div class="circle_slider"></div>
                             <img src="images/slider 1.png" alt="" class="slider_img">
                         </div>
                     </div>
     
                     <div class="carousel-item row">
-                        <div class="col-md-6 carousel_text">
+                        <div class="col-md-6  col-10 carousel_text">
                             <h4 class="slider_tittle">INSUMOS PAPELERIA Y OFICINA</h4>
                             <p class="slider_text">Ofrecemos los mejores productos de papelería en general, para aprovisionar las necesidades de su empresa. Nuestro portafolio de servicios hace que seamos su mejor aliado comercial con diferentes opciones de servicio y calidad.</p>
-                            <div class="ctn_btn_services">
-                                <a href="#" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
+                            <div class="ctn_btn_services btn_carousel">
+                                <a href="clients.html" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
                             </div>
                         </div>
-                        <div class="col-md-5 ctn_slider_img">
+                        <div class="col-5 ctn_slider_img">
                             <div class="circle_slider"></div>
                             <img src="images/slider 2.png" alt="" class="slider_img">
                         </div>
                     </div>
     
                     <div class="carousel-item row">
-                        <div class="col-md-6 carousel_text">
+                        <div class="col-md-6 col-10 carousel_text">
                             <h4 class="slider_tittle">INSUMOS CAFETERIA</h4>
                             <p class="slider_text">Ofrecemos suministros y productos para cafetería en general, para aprovisionar las necesidades de su empresa. Nuestro portafolio de servicios hace que seamos su mejor aliado comercial con diferentes opciones de servicio y calidad.</p>
-                            <div class="ctn_btn_services">
-                                <a href="#" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
+                            <div class="ctn_btn_services btn_carousel">
+                                <a href="clients.html" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
                             </div>
                         </div>
-                        <div class="col-md-5 ctn_slider_img">
+                        <div class="col-5 ctn_slider_img">
                             <div class="circle_slider"></div>
                             <img src="images/slider 3.png" alt="" class="slider_img">
                         </div>
@@ -95,92 +106,97 @@
                             <h5 class="slider_subtittle">SERVICIOS VEHICULARES SEGÚN LA NECESIDAD DE TU EMPRESA</h5>
                         </div>
                         <div class="row carousel_text cont_margin pt-0 cont_text">
-                            <div class="slider_subitems col-md-6">
+                            <div class="slider_subitems col-md-6 col-10">
                                 <h6 class="slider_subitems_tittle">CARRO VALLA</h6>
                                 <p class="slider_subitems_text">El carro valla o la publicidad móvil es un servicio estratégico con un alto impacto visual y auditivo que capta inmediatamente la atención del público objetivo.</p>
                             </div>
-                            <div class="slider_subitems col-md-6">
+                            <div class="slider_subitems col-md-6 col-10">
                                 <h6 class="slider_subitems_tittle">LOGÍSTICA DE TRANSPORTE</h6>
                                 <p class="slider_subitems_text">Distribuimos productos o mercancías de tu empresa.</p>
                             </div>
-                            <div class="slider_subitems col-md-6">
+                            <div class="slider_subitems col-md-6 col-10">
                                 <h6 class="slider_subitems_tittle">MAQUINARIA AMARILLA</h6>
                                 <p class="slider_subitems_text">Arriendo de maquinaria a corto y largo plazo como alternativa para maximizar la eficiencia de los recursos de su empresa.</p>
                             </div>
-                            <div class="slider_subitems col-md-6">
+                            <div class="slider_subitems mb-0 col-md-6 col-10">
                                 <h6 class="slider_subitems_tittle">TRANSPORTE DE CARGA EN VOLQUETAS</h6>
-                                <p class="slider_subitems_text">Servicio de alquiler de volquetas para la operación logística de su empresa según la necesidad: Transporte de diferentes materiales, con la planeación requerida y flota de vehículos adecuada para ello.</p>
+                                <p class="slider_subitems_text mb-0">Servicio de alquiler de volquetas para la operación logística de su empresa según la necesidad: Transporte de diferentes materiales, con la planeación requerida y flota de vehículos adecuada para ello.</p>
                             </div>
-                            <div class="ctn_btn_services col-12 btn_vehicle">
-                                <a href="#" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
+                            <div class="ctn_btn_services btn_carousel col-12 btn_vehicle">
+                                <a href="clients.html" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
                             </div>
                         </div>
                     </div>
     
                     <div class=" row carousel-item">
-                        <div class="col-md-6 carousel_text">
+                        <div class="col-md-6 col-10 carousel_text">
                             <h4 class="slider_tittle tittle_alquiler">ALQUILER DE ESPACIOS PUBLICITARIOS (VALLAS)</h4>
                             <ul class="slider_list">
                                 <li>Realizamos la comercialización de Publicidad Exterior. (vallas).</li>
                                 <li>Producción e instalación, venta y arriendo de diversos elementos y formatos de Vallas Publicitarias. (a la medida).</li>
                                 <li>Producción de material publicitario.</li>
                             </ul>
-                            <div class="ctn_btn_services btn_alquiler">
-                                <a href="#" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
+                            <div class="ctn_btn_services btn_carousel btn_alquiler">
+                                <a href="clients.html" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
                             </div>
                         </div>
-                        <div class="col-md-5 ctn_slider_img">
+                        <div class="col-5 ctn_slider_img">
                             <div class="circle_slider"></div>
                             <img src="images/slider 5.png" alt="" class="slider_img">
                         </div>
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev owl-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span aria-hidden="true">‹</span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next owl-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span aria-hidden="true">›</span>
                     <span class="visually-hidden">Next</span>
                 </button>
+
+                <div class="carousel-indicators" id="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active btn_indicator" aria-current="true" aria-label="Slide 1">
+                        <img src="images/ICONOS-11.png" alt="" class="img_principal">
+                        <img src="images/ICONOS-12.png" alt="" class="img_secundary">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="btn_indicator" aria-label="Slide 2">
+                        <img src="images/ICONOS-13.png" alt="" class="img_principal">
+                        <img src="images/ICONOS-14.png" alt="" class="img_secundary">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="btn_indicator" aria-label="Slide 3">
+                        <img src="images/ICONOS-15.png" alt="" class="img_principal">
+                        <img src="images/ICONOS-16.png" alt="" class="img_secundary">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="btn_indicator" aria-label="Slide 4">
+                        <img src="images/ICONOS-17.png" alt="" class="img_principal">
+                        <img src="images/ICONOS-18.png" alt="" class="img_secundary">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="btn_indicator" aria-label="Slide 5">
+                        <img src="images/ICONOS-19.png" alt="" class="img_principal">
+                        <img src="images/ICONOS-20.png" alt="" class="img_secundary">
+                    </button>
+                </div>
             </div>
 
-            <div class="carousel-indicators" id="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active btn_indicator" aria-current="true" aria-label="Slide 1">
-                    <img src="images/ICONOS-11.png" alt="" class="img_principal">
-                    <img src="images/ICONOS-12.png" alt="" class="img_secundary">
-                </button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="btn_indicator" aria-label="Slide 2">
-                    <img src="images/ICONOS-13.png" alt="" class="img_principal">
-                    <img src="images/ICONOS-14.png" alt="" class="img_secundary">
-                </button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="btn_indicator" aria-label="Slide 3">
-                    <img src="images/ICONOS-15.png" alt="" class="img_principal">
-                    <img src="images/ICONOS-16.png" alt="" class="img_secundary">
-                </button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="btn_indicator" aria-label="Slide 4">
-                    <img src="images/ICONOS-17.png" alt="" class="img_principal">
-                    <img src="images/ICONOS-18.png" alt="" class="img_secundary">
-                </button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="btn_indicator" aria-label="Slide 5">
-                    <img src="images/ICONOS-19.png" alt="" class="img_principal">
-                    <img src="images/ICONOS-20.png" alt="" class="img_secundary">
-                </button>
+
+            <div class="ctn_btn_services btn_carousel_mobile col-10 btn_alquiler">
+                <a href="clients.html" class="supple_btn btn_services">SOLICITA TU COTIZACIÓN</a>
             </div>
         </section>
 
         <section class="about">
-            <div class="about_tittle">
-                <h2 class="tittle">¿QUIÉNES SOMOS?</h2>
-                <img src="images/Grupo 7.png" alt="" class="about_lineas">
-            </div>
             <div class="contain_about">
                 <img src="images/Grupo 21.png" alt="" class="img_about">
-                <div>
+                <div class="about_ctn_text">
+                    <div class="about_tittle">
+                        <h2 class="tittle">¿QUIÉNES SOMOS?</h2>
+                        <img src="images/Grupo 7.png" alt="" class="about_lineas">
+                    </div>
                     <div class="ctn_about_text">
                         <p class="about_text">Supple empresa de servicios integrales en suministro de insumos de papelería, cafetería, alquiler de diferentes opciones de vehículos.</p>
-                        <p class="about_subtext">EN SUPPLE SUPLIMOS LAS NECESIDADES DE LAS EMPRESAS</p>
+                        <p class="about_subtext about_subtext_mobile">EN SUPPLE SUPLIMOS LAS NECESIDADES DE LAS EMPRESAS</p>
                     </div>
                     <div class="ctn_about_text2">
                         <P class="about_text">Escríbenos a nuestro canal de PQR</P>
@@ -192,6 +208,7 @@
 
         <section class="clients">
             <img src="images/Enmascarar grupo 7.png" alt="" class="services_bag">
+            <img src="images/Enmascarar grupo 16.png" alt="" class="services_bag_mobile">
             <div class="ctn_tittle">
                 <img src="images/Grupo 7.svg" alt="" class="services_lineas">
                 <h2 class="tittle">CLIENTES FELICES</h2>
@@ -397,30 +414,34 @@
     </main>
 
     <footer class="footer">
-        <img src="images/Grupo 29.png" alt="">
-
-        <div class="footer_list">
-            <ul>
-                <li>Servicios</li>
-                <li>Quienes somos</li>
-                <li>Testimonios</li>
-            </ul>
-
-            <ul>
-                <li>Eres cliente</li>
-                <li>Eres proveedor</li>
-            </ul>
-        </div>
-
-        <div>
-            <div>
-                <a href="#"><img src="images/Grupo 42@2x.png" alt=""></a>
-                <a href="#"><img src="images/Grupo 670.png" alt=""></a>
+        <div class="row ctn_foot align-items-center">
+            <a href="index.html" class="home col-md-3"><img src="images/Grupo 29.png" alt="" class="img_footer"></a>
+    
+            <div class="footer_list col-md-5 d-flex justify-content-evenly" >
+                <ul>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Testimonios</a></li>
+                </ul>
+    
+                <ul>
+                    <li><a href="clients.html">Eres cliente</a></li>
+                    <li><a href="providers.html">Eres proveedor</a></li>
+                </ul>
             </div>
-            <a href="#">SOLICITA TU COTIZACIÓN</a>
+    
+            <div class="col-md-4 d-flex flex-column align-items-end pd-0 mb-auto icons_footer">
+                <div class="ctn_icons_footer">
+                    <a href="#"><img src="images/Grupo 42@2x.png" alt="" class="icons_footer1"></a>
+                    <a href="#"><img src="images/Grupo 670.png" alt="" class="icons_footer2"></a>
+                </div>
+            </div>
+            <div class="d-flex ctn_btn_footer">
+                <a href="clients.html" class="supple_btn btn_footer btn_banner">SOLICITA TU COTIZACIÓN</a>
+            </div>
         </div>
 
-        <div>
+        <div class="copy">
             <span>Este es un producto creado por</span>
             <img src="images/Grupo 658.png" alt="">
         </div>
@@ -429,6 +450,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="lib/fontawesome/js/all.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
