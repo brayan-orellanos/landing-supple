@@ -59,21 +59,21 @@ $(function () {
         }
     })
 
-    // $('.list_forms').click(function() {
-    //     if(!$(this).hasClass('active_list')) {
-    //         $('.list_forms').each(function () {
-    //             $(this).removeClass('active_list')
-    //         })
+    $('.list_forms').click(function() {
+        if(!$(this).hasClass('active_list')) {
+            $('.list_forms').each(function () {
+                $(this).removeClass('active_list')
+            })
 
-    //         $('.cl_form').each(function () {
-    //             $(this).addClass('none')
-    //         })
+            $('.cl_form').each(function () {
+                $(this).addClass('none')
+            })
 
-    //         $(this).addClass('active_list')
-    //         console.log($(this)[0])
-    //         $(`#${$(this).data('form')}`).removeClass('none')
-    //     }
-    // })
+            $(this).addClass('active_list')
+            console.log($(this)[0])
+            $(`#${$(this).data('form')}`).removeClass('none')
+        }
+    })
 
     $('#capture').on('change', function () {
         if(document.getElementById('capture').files[0]) {
