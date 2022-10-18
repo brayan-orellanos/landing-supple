@@ -20,6 +20,16 @@
 body {
     font-family:"montserrat";
     position: relative;
+    overflow-y: auto;
+}
+
+.menu .active {
+    color: var(--orange) !important;
+    background-color: var(--white) !important;
+}
+
+.main {
+    position: relative;
 }
 
 .chat {
@@ -28,7 +38,6 @@ body {
     right: 0;
     bottom: 20vh;
     background: var(--orange);
-    box-shadow: 0px 3px 6px #00000029;
     z-index: 300;
     padding: 15px;
     border-radius: 15px 0 0 15px;
@@ -46,7 +55,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 26px 6vw 15px;
+    padding: 15px 6vw 10px;
     position: sticky;
     top: 0;
     background-color: var(--white);
@@ -66,6 +75,7 @@ body {
     font-size: 20px;
     color: var(--orange);
     display: none;
+    cursor: pointer;
 }
 
 .menu {
@@ -131,7 +141,7 @@ a.menu_active:hover {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 36.5vw;    
+    top: 31vw;    
     width: 16vw;
     -webkit-animation: right5 2s both;
     animation: right5 2s both;
@@ -142,10 +152,10 @@ a.menu_active:hover {
         top: 50vw;
     }
     90% {
-        top: 36vw;
+        top: 30vw;
     }
     100% {
-        top: 36.5vw;
+        top: 31vw;
     }
 }
 
@@ -553,7 +563,7 @@ a.menu_active:hover {
     width: 80px !important;
     height: 80px;
     border-radius: 50%;
-    border: 1px solid blueviolet;
+    box-shadow: 0px 4px 12px -2px rgb(0, 0, 0, .2);
     margin-right: 15px;
 }
 
@@ -764,7 +774,7 @@ a.menu_active:hover {
 }
 
 .clients_main {
-    margin: 6vw 9.3vw 0 0;
+    margin: 4vw 9.3vw 0 0;
     display: flex;
     overflow: hidden;
 }
@@ -789,7 +799,7 @@ a.menu_active:hover {
 .section_img {
     position: relative;
     margin-right: 6vw;
-    top: 1.2vw;
+    margin-top: 1.5vw;
 }
 
 .section_img .tittle {
@@ -804,13 +814,12 @@ a.menu_active:hover {
 }
 
 .clients_img {
-    /* margin-top: var(--font-15); */
     position: absolute;
     left: -2vw;
     width: 34.75vw;
     -webkit-animation: tp2 2s both;
     animation: tp2 2s both;
-    top: 12vw;
+    top: 9vw;
     z-index: -1;
 }
 
@@ -829,7 +838,7 @@ a.menu_active:hover {
 .clients_lineas {
     position: absolute;
     left: 23.5vw;
-    top: 34vw;
+    top: 30vw;
     width: 16vw;
     -webkit-animation: right 2s both;
     animation: right 2s both;
@@ -840,17 +849,17 @@ a.menu_active:hover {
         top: 50vw;
     }
     90% {
-        top: 33vw;
+        top: 29vw;
     }
     100% {
-        top: 34vw;
+        top: 30vw;
     }
 }
 
 .clients_form {
     border: 1px solid #e5e5e5;
     border-radius: 25px;
-    padding: 2.6vw var(--font-15) var(--font-15);
+    padding: 2vw var(--font-15) var(--font-15);
     height: fit-content;
     box-shadow: 0px 3px 6px #0000001F;
     margin-bottom: 3vw;
@@ -922,10 +931,12 @@ input.form-control {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--orange);
 }
 
 .label_file:hover {
     background-color: var(--dark-orange);
+    border: 1px solid var(--orange);
 }
 
 .ctn_input {
@@ -958,7 +969,7 @@ input.form-control {
 .clients_check {
     margin-left: 50px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     color: var(--gray-dark);
     font-size: 16px;
 }
@@ -1003,7 +1014,7 @@ input.form-control {
 }
 
 .mar_btm {
-    margin-bottom: 1.25vw;
+    margin-bottom: 1vw;
 }
 
 .providers_form {
@@ -1034,6 +1045,10 @@ input.form-control {
     animation: prl 2s both;
 }
 
+.providers_main {
+    margin: 6.2vw 9.3vw 0 0;
+}
+
 @keyframes prl {
     0% {
         top: 50vw;
@@ -1044,6 +1059,75 @@ input.form-control {
     100% {
         top: 31vw;
     }
+}
+
+.ctn_modal_btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1.2rem;
+    padding-right: 5px;
+}
+
+.ctn_modal {
+    text-align: center;
+    padding: 0 20px 20px 30px;
+}
+
+.ctn_modal img {
+    margin: 20px 0 40px 0;
+}
+
+.tittle_modal {
+    font-size: 30px;
+    color: var(--orange);
+    font-weight: bold;
+    font-family: "bebas-neue-pro";
+    margin-bottom: 30px;
+}
+
+.ctn_modal p {
+    font-size: 20px;
+    color: var(--gray-dark);
+}
+
+.modal_confirm {
+    width: 420px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.modal_confirm, .modal_politic {
+    border: 1px solid #707070;
+    border-radius: 23px;
+}
+
+.close_modal {
+    font-size: 2rem;
+    color: var(--purple);
+    font-weight: bold;
+    background: transparent;
+    border: none;
+}
+
+.politic_text {
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 20px;
+    color: var(--gray-dark);
+}
+
+.modal_texts {
+    padding: 20px 30px;
+}
+
+.tooltip > .tooltip-inner {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before, .tooltip.bs-tooltip-bottom .tooltip-arrow::before, .tooltip.bs-tooltip-start .tooltip-arrow::before, .tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-top-color: var(--orange);
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1105,11 +1189,27 @@ input.form-control {
         width: 35px;
         height: 35px;
     }
+
+    .chat img {
+        width: 40px;
+    }
+
+    .cl_form textarea {
+        height: 150px;
+    }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .header {
         padding: 2.5vw 8vw;
+    }
+
+    .chat {
+        bottom: 40vh;
+    }
+
+    .chat img {
+        width: 30px;
     }
 
     .ctn_bars {
@@ -1378,7 +1478,7 @@ input.form-control {
     }
 
     .img_principal, .img_secundary {
-        display: none;
+        display: none !important;
     }
 
     .carousel-indicators .btn_indicator {
@@ -1796,9 +1896,5 @@ input.form-control {
     .form-check-input[type=checkbox] {
         width: 6vw;
         height: 6vw;
-    }
-
-    .chat img {
-        width: 50px;
     }
 }
