@@ -66,6 +66,7 @@ body {
     font-size: 20px;
     color: var(--orange);
     display: none;
+    cursor: pointer;
 }
 
 .menu {
@@ -804,7 +805,6 @@ a.menu_active:hover {
 }
 
 .clients_img {
-    /* margin-top: var(--font-15); */
     position: absolute;
     left: -2vw;
     width: 34.75vw;
@@ -910,6 +910,10 @@ input.form-control {
     }
 }
 
+.cl_form textarea {
+    height: 150px;
+}
+
 .label_file {
     background: var(--orange);
     border-radius: 0px 9px 9px 0px;      
@@ -922,10 +926,12 @@ input.form-control {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--orange);
 }
 
 .label_file:hover {
     background-color: var(--dark-orange);
+    border: 1px solid var(--orange);
 }
 
 .ctn_input {
@@ -958,7 +964,7 @@ input.form-control {
 .clients_check {
     margin-left: 50px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     color: var(--gray-dark);
     font-size: 16px;
 }
@@ -1046,6 +1052,66 @@ input.form-control {
     }
 }
 
+.ctn_modal_btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1.2rem;
+    padding-right: 5px;
+}
+
+.ctn_modal {
+    text-align: center;
+    padding: 0 20px 20px 30px;
+}
+
+.ctn_modal img {
+    margin: 20px 0 40px 0;
+}
+
+.tittle_modal {
+    font-size: 30px;
+    color: var(--orange);
+    font-weight: bold;
+    font-family: "bebas-neue-pro";
+    margin-bottom: 30px;
+}
+
+.ctn_modal p {
+    font-size: 20px;
+    color: var(--gray-dark);
+}
+
+.modal_confirm {
+    width: 420px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.modal_confirm, .modal_politic {
+    border: 1px solid #707070;
+    border-radius: 23px;
+}
+
+.close_modal {
+    font-size: 2rem;
+    color: var(--purple);
+    font-weight: bold;
+    background: transparent;
+    border: none;
+}
+
+.politic_text {
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 20px;
+    color: var(--gray-dark);
+}
+
+.modal_texts {
+    padding: 20px 30px;
+}
+
 @media only screen and (max-width: 1400px) {
     .owl-nav {
         transform: translateY(-50%);
@@ -1105,9 +1171,13 @@ input.form-control {
         width: 35px;
         height: 35px;
     }
+
+    .chat img {
+        width: 40px;
+    }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .header {
         padding: 2.5vw 8vw;
     }
@@ -1796,9 +1866,5 @@ input.form-control {
     .form-check-input[type=checkbox] {
         width: 6vw;
         height: 6vw;
-    }
-
-    .chat img {
-        width: 50px;
     }
 }

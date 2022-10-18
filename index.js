@@ -44,7 +44,7 @@ $(function () {
                 dots: true,
                 loop:true,
             },
-            801:{
+            769:{
                 items:2,
                 nav:true,
                 dots: true,
@@ -80,6 +80,12 @@ $(function () {
             $('.name_img').html(document.getElementById('capture').files[0].name)
         } else {
             $('.name_img').html('')
+        }
+    })
+
+    $('#politic').change(function() {
+        if($(this).prop('checked')) {
+            $("#modal_politics").modal("show");
         }
     })
 })
